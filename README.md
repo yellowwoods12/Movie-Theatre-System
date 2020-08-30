@@ -1,6 +1,32 @@
 # Movie-Theatre-System
 A movie theatre system's backend built on NodeJs with MYSQL as the database and Postman for API testing.
 
+This application is built as part of hiring assignment by Zomentum.
+
+## Task
+
+To create a REST application for movie ticket bookings.
+
+## User side Requirements
+
+ - Book ticket for a movie at a given time slot if slot is available.
+ - Update booking timings for provided ticket.
+ - Fetch user details via ticket id.
+ - Delete ticket via ticket id.
+ - Retrieve all tickets at a given time.
+
+## Application side requirements
+
+- For a given slot for a movie upto 20 people can book tickets.
+- Tickets should be set expired after 8 hours of booking time.
+- Automatically delete expired tickets.
+
+Selected tech stack
+
+-  Backend Service : NodeJS
+-  Database: MYSQL
+
+
 ## Installation and Setup
 
 1) Create a database named `movie_theatre` and inside that a table named `movie_theatre` using the following commands using MYSQL:
@@ -27,6 +53,10 @@ Server starts running on `http://localhost:5000/`
 3) connection.js => contains the connection details of the server with the database.
 4) Line 21 server.js also contains `cron jobs` which automatically deletes the expired records from the DB after every 8 hours.
 5) tests => This directory contains screenshots for the api testing through Postman.
+
+## Testing 
+
+**The entire collection containing the tests and the variables is present in Postman directory.**
 
 **Note: I have written tests for each end-point which I tested using Postman only. The test conditions and results are visible in the screenshots present in tests directory.**
 

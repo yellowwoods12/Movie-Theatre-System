@@ -4,7 +4,7 @@ const { promisify } = require('util');
 var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : '123456',
+  password : 'Tripti118169@',
   database : 'movie_theatre'
 });
 
