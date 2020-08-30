@@ -51,7 +51,7 @@ Server starts running on `http://localhost:5000/`
 
 2) server.js => Starting point of our entire application
 3) connection.js => contains the connection details of the server with the database.
-4) Line 21 server.js also contains `cron jobs` which automatically deletes the expired records from the DB after every 8 hours.
+4) Line 21 server.js also contains **cron jobs** which automatically deletes the expired records from the DB after every 8 hours.
 5) tests => This directory contains screenshots for the api testing through Postman.
 
 ## Testing 
