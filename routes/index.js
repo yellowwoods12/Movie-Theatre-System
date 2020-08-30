@@ -13,4 +13,5 @@ app.use('/api', router);
 
 router.post('/bookTicket',bookTicketController.bookTicketController);
 
+
 module.exports = router
