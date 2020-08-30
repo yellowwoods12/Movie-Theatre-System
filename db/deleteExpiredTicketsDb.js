@@ -6,7 +6,7 @@ const deleteExpiredTicketsDb = async (currentTime) => {
  try{
   
 
-     let deleteExpirypromisify = promisify(connection.query).bind(connection);
+    let deleteExpirypromisify = promisify(connection.query).bind(connection);
     const checked = await deleteExpirypromisify('DELETE from movie_tickets WHERE isExpired = 1');
    
 

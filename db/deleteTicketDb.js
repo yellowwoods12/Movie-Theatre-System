@@ -6,7 +6,7 @@ const deleteTicketDb = async (ticketId) => {
  try{
   
 
-     let deleteTicketpromisify = promisify(connection.query).bind(connection);
+    let deleteTicketpromisify = promisify(connection.query).bind(connection);
     const deleted = await deleteTicketpromisify('DELETE from movie_tickets WHERE ticketID = ?',[ticketId]);
    
     

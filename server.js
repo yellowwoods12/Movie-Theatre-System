@@ -1,7 +1,6 @@
 var express    = require("express");
 const cron = require("node-cron");
 const fs = require("fs");
-//var login = require('./routes/loginRoutes');
 var connection = require('./connection');
 var bodyParser = require('body-parser');
 var routes = require('./routes');
@@ -10,6 +9,7 @@ const {deleteExpiredTicketsController} = require('./controllers/deleteExpiredTic
 
 var app = express();
 app.use(cors());
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -27,4 +27,4 @@ cron.schedule("0 */8 * * *", function() {
 
 app.use('/api',routes);
 app.listen(5000);
-//var login = require('./routes/loginroutes');
+

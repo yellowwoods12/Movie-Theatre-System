@@ -17,7 +17,7 @@ const viewUserDb = async (ticketId) => {
     {
         return {"message" : "No ticket exists with the given Id "+ticketId};
     }
-    //console.log(ticketDetailsjson);
+
     return userDetailsjson;
 
 

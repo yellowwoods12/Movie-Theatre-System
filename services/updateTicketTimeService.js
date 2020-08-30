@@ -5,6 +5,7 @@ const {checkTimeDifferenceService} = require('../services/checkTimeDifferenceSer
 const updateTicketTimeService = async (ticketId,newTime) => {
    try{
 
+        //update ticket time
         res = await updateTicketTimeDb(ticketId,newTime);
         result = {"message": "Success : Ticket Time Updated"};
         

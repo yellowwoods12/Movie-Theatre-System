@@ -5,7 +5,6 @@ var connection = require('../connection');
 const bookTicketDb = async (userName, phoneNumber, movieName, timings) => {
  try{
   
-    console.log(userName);
     var ticketDetails = {
         "user_name": userName,
         "phone_number" : phoneNumber,
@@ -14,7 +13,7 @@ const bookTicketDb = async (userName, phoneNumber, movieName, timings) => {
          "isExpired" : false
     }
 
-     let bookTicketpromisify = promisify(connection.query).bind(connection);
+    let bookTicketpromisify = promisify(connection.query).bind(connection);
     const result = await bookTicketpromisify('INSERT INTO movie_tickets SET ?',[ticketDetails]);
     return result;
 

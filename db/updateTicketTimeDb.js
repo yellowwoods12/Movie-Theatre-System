@@ -6,7 +6,7 @@ const updateTicketTimeDb = async (ticketId,newTime) => {
  try{
   
 
-     let updateTimepromisify = promisify(connection.query).bind(connection);
+    let updateTimepromisify = promisify(connection.query).bind(connection);
     const updated = await updateTimepromisify('UPDATE movie_tickets SET timings =? WHERE ticketID = ?',[newTime,ticketId]);
    
 

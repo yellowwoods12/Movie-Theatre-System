@@ -12,9 +12,9 @@ var connection = mysql.createConnection({
 
   connection.connect(function(err){
     if(!err) {
-        console.log("Database is connected using external file ... nn");
+        console.log("Database is connected using external file ...");
     } else {
-        console.log("Error connecting database using external file... nn");
+        console.log("Error connecting database using external file...");
     }
     });
     

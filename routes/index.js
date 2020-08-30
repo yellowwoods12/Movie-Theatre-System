@@ -12,8 +12,10 @@ const viewUserController  = require('../controllers/viewUserController');
 router.post('/', function(req, res) {
     res.json({ message: 'server started' });
 });
+
 app.use('/api', router);
 
+//routes for all the end-points
 router.post('/bookTicket',bookTicketController.bookTicketController);
 router.post('/updateTicketTime',updateTicketTimeController.updateTicketTimeController);
 router.post('/viewTickets',viewTicketsController.viewTicketsController);

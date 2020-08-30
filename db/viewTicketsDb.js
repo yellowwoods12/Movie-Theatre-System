@@ -6,13 +6,12 @@ const viewTicketsDb = async (timings) => {
  try{
   
 
-     let ticketpromisify = promisify(connection.query).bind(connection);
+    let ticketpromisify = promisify(connection.query).bind(connection);
     const ticketDetails = await ticketpromisify('Select * from movie_tickets where timings = ?',[timings]);
 
     ticketDetailstr = JSON.stringify(ticketDetails);
     ticketDetailsjson = JSON.parse(ticketDetailstr);
 
-    //console.log(ticketDetailsjson);
     return ticketDetailsjson;
 
 

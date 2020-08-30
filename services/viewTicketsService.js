@@ -3,8 +3,8 @@ const {viewTicketsDb} = require('../db/viewTicketsDb');
 const viewTicketsService = async (timings) => {
    try{
 
+        //extract ticket details for given time
         ticketDetails = await viewTicketsDb(timings);
-        console.log(ticketDetails);
         return ticketDetails;
 
    } catch(e) {

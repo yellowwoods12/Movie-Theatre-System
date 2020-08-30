@@ -3,7 +3,7 @@ const { deleteExpiredTicketsService } = require('../services/deleteExpiredTicket
 const deleteExpiredTicketsController = async () => {
 
 try{
-    //console.log(req);
+
     result = await deleteExpiredTicketsService();
     return result;
 

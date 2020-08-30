@@ -6,7 +6,7 @@ const checkTicketCountDb = async (timings) => {
  try{
   
 
-     let checkCountpromisify = promisify(connection.query).bind(connection);
+    let checkCountpromisify = promisify(connection.query).bind(connection);
     const count = await checkCountpromisify('Select count(`timings`) as count from movie_tickets where timings = ?',[timings]);
 
     countstr = JSON.stringify(count);
