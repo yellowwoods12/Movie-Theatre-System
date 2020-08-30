@@ -28,7 +28,7 @@ Server starts running on `http://localhost:5000/`
 4) Line 21 server.js also contains `cron jobs` which automatically deletes the expired records from the DB after every 8 hours.
 5) tests => This directory contains screenshots for the api testing through Postman.
 
-**Note: I have written tests for each end-point which I tested using Postman only. The test conditions and results are visible in the screenshots.**
+**Note: I have written tests for each end-point which I tested using Postman only. The test conditions and results are visible in the screenshots present in tests directory.**
 
 **Kindly note that while my repo was public on github this user https://github.com/MrRobot2001/Movie-Theatre-System forked my assessment code and might use it as another submission while it has originally been written by me.**
 
