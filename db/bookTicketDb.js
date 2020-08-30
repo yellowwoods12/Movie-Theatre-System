@@ -5,6 +5,7 @@ var connection = require('../connection');
 const bookTicketDb = async (userName, phoneNumber, movieName, timings) => {
  try{
   
+    console.log(userName);
     var ticketDetails = {
         "user_name": userName,
         "phone_number" : phoneNumber,
