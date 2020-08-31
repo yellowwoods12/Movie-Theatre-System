@@ -53,6 +53,15 @@ Server starts running on `http://localhost:5000/`
 3) connection.js => contains the connection details of the server with the database.
 4) Line 21 server.js also contains **cron jobs** which automatically deletes the expired records from the DB after every 8 hours.
 5) tests => This directory contains screenshots for the api testing through Postman.
+6) Postman => This directory contains the Postman collection having all the tests for all the endpoints.
+
+## Routes
+
+1) /api/bookTicket => Used for booking a new ticket wherein user provides his name, phone number, movie, movie timing.
+2) /api/updateTicketTime => Used for updating the time slot of some given ticket.
+3) /api/viewTickets => Fetch ticket details for a given time slot.
+4) /api/deleteTicket => Deleting some particular ticket given its ticketId.
+5) /api/viewUser => Viewing user details for some particular ticket.
 
 ## Testing 
 
