@@ -67,6 +67,6 @@ Server starts running on `http://localhost:5000/`
 
 **The entire collection containing the tests and the variables is present in Postman directory.**
 
-**Note: I have written tests for each end-point which I tested using Postman only. The test conditions and results are visible in the screenshots present in tests directory.**
+
 
 
